@@ -1,0 +1,14 @@
+flask==2.3.2
+flask-cors==4.0.0
+flask-socketio==5.3.6
+eventlet==0.33.1
+
+opencv-python==4.9.0.80
+mediapipe==0.10.9
+
+nibabel==5.2.0
+nilearn==0.10.2
+scikit-image==0.22.0
+scipy==1.13.0
+numpy==1.26.4
+pyvista==0.43.4

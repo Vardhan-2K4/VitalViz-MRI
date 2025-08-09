@@ -1,0 +1,104 @@
+/* General setup */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000d1a;
+}
+
+.home-container {
+  position: relative;
+  padding-top: 80px;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.background-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.main-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 40px 20px;
+}
+
+/* Hero Section */
+.hero {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  background: rgba(0, 30, 50, 0.85);
+  border-radius: 16px;
+  padding: 60px 30px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  color: #00eaff;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* About Section */
+.about-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.about-card {
+  background: rgba(0, 20, 30, 0.95);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 16px;
+  max-width: 800px;
+  padding: 40px;
+  color: white;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transform: translateY(60px);
+  opacity: 0;
+  animation: slideUpFade 1.2s ease-out forwards;
+}
+
+.about-card h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #00eaff;
+}
+
+.about-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+@keyframes slideUpFade {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,83 @@
+.taskbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #00eaff, #00c6ff, #00d49f);
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 0.6rem 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+
+.taskbar-inner {
+  width: 90%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.taskbar-logo {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+}
+
+.taskbar-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: flex-end;
+}
+
+.taskbar-button {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+}
+
+.taskbar-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.taskbar-button.active {
+  background: white;
+  color: #00bcd4;
+  font-weight: 600;
+}
+
+/* Animation on load */
+.fade-in {
+  animation: slideDown 0.4s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Prevent content from hiding under fixed navbar */
+body {
+  padding-top: 70px;
+}
+
+
