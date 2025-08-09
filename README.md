@@ -2,7 +2,6 @@
 
 An innovative **Virtual Reality Health Viewer** that transforms medical brain imaging data into interactive 3D visualizations. Built for healthcare professionals and medical students to explore MRI brain models through immersive VR experiences and gesture-based controls.
 
-![Medical Imaging](https://img](https://img.shields.io/badge Time](https://img.shields.io/badge/Real--Time-Processing
 
 - **🧠 Medical Brain Model Visualization**: Convert `.nii` neuroimaging files to interactive `.ply` 3D models
 - **🥽 VR & Traditional Viewing Modes**: Experience brain models in both VR and standard 3D environments
