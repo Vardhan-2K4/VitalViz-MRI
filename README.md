@@ -266,7 +266,7 @@ export FLASK_ENV=production
 
 - **Model Loading**: < 3 seconds for standard brain models
 - **Gesture Response**: < 100ms latency
-- **VR Frame Rate**: 90+ FPS in optimized mode
+- **VR Frame Rate**: 60+ FPS in optimized mode
 - **File Conversion**: 30-60 seconds for typical .nii files
 
 ## 🔒 Security & Privacy
@@ -276,9 +276,6 @@ export FLASK_ENV=production
 - **Data Retention**: Configurable retention policies
 - **Access Control**: Role-based permissions
 
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
@@ -287,12 +284,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - **Open Source Contributors** for foundational libraries
 - **Healthcare Professionals** for domain expertise and feedback
 - **Hackathon Organizers** for providing the platform to innovate
-
-## 📞 Support & Contact
-
-**Issues**: [Create an issue](https://github.com/YOUR-USERNAME/VitalViz-MRI/issues)  
-**Discussions**: [Join the conversation](https://github.com/YOUR-USERNAME/VitalViz-MRI/discussions)  
-**Email**: your.email@example.com
 
 ## 🔗 Related Projects
 
